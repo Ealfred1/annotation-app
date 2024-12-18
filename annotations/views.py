@@ -50,3 +50,4 @@ class AnnotationImageViewSet(viewsets.ModelViewSet):
         annotation = Annotation.objects.create(**annotation_data)
         serializer = AnnotationSerializer(annotation)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+
